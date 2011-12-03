@@ -41,8 +41,18 @@
     <div class="description">
       HTML5 inline validation is great, until you want to test your server side logic too...
     </div>
+    
+    <p>Thankfully, the solution is just to add <code>novalidate=''</code> to your forms. But you don't want
+    to keep having to do that, right? No way! Instead, just drag this handy bookmarklet into your browser's bookmark
+    toolbar and disabling validation is only ever a click away...</p>
+    
+    <p><a href='javascript:for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");'>novalidate!</a></p>
+    
+    <p>Bonus points are available if you can trim the javascript down any shorter than its current form:
+      <pre>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");</pre>
+    </p>
 
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+    <p>If you really want, you can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
       <pre>$ git clone git://github.com/makeusabrew/novalidate</pre>
     </p>
