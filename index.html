@@ -21,20 +21,17 @@
         <p>HTML5 inline validation is great, until you want to test your server side logic too...</p>
         <p class="view"><a href="https://github.com/makeusabrew/novalidate">View the Project on GitHub <small>makeusabrew/novalidate</small></a></p>
         <ul>
-          <li><a href="https://github.com/makeusabrew/novalidate/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/makeusabrew/novalidate/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/makeusabrew/novalidate">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <p>Thankfully, the solution is just to add <code>novalidate=''</code> to your forms. But you don't want to keep having to do that, right? No way! Instead, just drag this handy bookmarklet into your browser's bookmark toolbar and disabling HTML5 inline validation is only ever a click away:</p>
 
-<p><a>novalidate!</a></p>
+<p><a href='javascript:for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");'>novalidate!</a></p>
 
 <p>Bonus points are available if you can trim the javascript down any shorter than its current form, which weighs in at a hefty <strong>76 bytes</strong>:</p>
 
-<pre><code>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");
-</code></pre>
+<pre><code>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");</code></pre>
       </section>
     </div>
     <footer>
