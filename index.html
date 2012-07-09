@@ -1,77 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset='utf-8'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>novalidate! by makeusabrew</title>
 
-  <title>makeusabrew/novalidate @ GitHub</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #dedede;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #3a04da; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #3a04da; }
-    h3 { text-align: center; color: #3a04da; }
-    a { color: #3a04da; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-  
-  <script type="text/javascript">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>novalidate!</h1>
+        <p>HTML5 inline validation is great, until you want to test your server side logic too...</p>
+        <p class="view"><a href="https://github.com/makeusabrew/novalidate">View the Project on GitHub <small>makeusabrew/novalidate</small></a></p>
+        <ul>
+          <li><a href="https://github.com/makeusabrew/novalidate/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/makeusabrew/novalidate/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/makeusabrew/novalidate">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Thankfully, the solution is just to add <code>novalidate=''</code> to your forms. But you don't want to keep having to do that, right? No way! Instead, just drag this handy bookmarklet into your browser's bookmark toolbar and disabling HTML5 inline validation is only ever a click away:</p>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20517424-6']);
-  _gaq.push(['_trackPageview']);
+<p><a>novalidate!</a></p>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<p>Bonus points are available if you can trim the javascript down any shorter than its current form, which weighs in at a hefty <strong>76 bytes</strong>:</p>
 
-  </script>
-</head>
-
-<body>
-  <a href="https://github.com/makeusabrew/novalidate"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <h1><a href="https://github.com/makeusabrew/novalidate">novalidate</a>
-      <span class="small">by <a href="https://twitter.com/makeusabrew">makeusabrew</a></span></h1>
-
-    <div class="description">
-      HTML5 inline validation is great, until you want to test your server side logic too...
+<pre><code>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");
+</code></pre>
+      </section>
     </div>
-    
-    <p>Thankfully, the solution is just to add <code>novalidate=''</code> to your forms. But you don't want
-    to keep having to do that, right? No way! Instead, just drag this handy bookmarklet into your browser's bookmark
-    toolbar and disabling HTML5 inline validation is only ever a click away:</p>
-    
-    <p><a href='javascript:for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");'>novalidate!</a></p>
-    
-    <p>Bonus points are available if you can trim the javascript down any shorter than its current form, which weighs
-    in at a hefty <b>76 bytes</b>:
-      <pre>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");</pre>
-    </p>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/makeusabrew">makeusabrew</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-20517424-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/makeusabrew/novalidate">makeusabrew/novalidate</a>
-    </div>
-
-  </div>
-
-</body>
+  </body>
 </html>
