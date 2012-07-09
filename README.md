@@ -1,1 +1,1 @@
-http://makeusabrew.github.com/novalidate
+Please see: http://novalidate.com or http://paynedigital.com/2012/07/disable-html5-form-validation-with-novalidate for a bit of a write up.
