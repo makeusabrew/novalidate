@@ -27,11 +27,11 @@
       <section>
         <p>Thankfully, the solution is just to add <code>novalidate=''</code> to your forms. But you don't want to keep having to do that, right? No way! Instead, just drag this handy bookmarklet into your browser's bookmark toolbar and disabling HTML5 inline validation is only ever a click away:</p>
 
-<p><a href='javascript:for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");'>novalidate!</a></p>
+<p><a href='javascript:for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate",i)'>novalidate!</a></p>
 
-<p>Bonus points are available if you can trim the javascript down any shorter than its current form, which weighs in at a hefty <strong>76 bytes</strong>:</p>
+<p>Bonus points are available if you can trim the javascript down any shorter than its current form, which currently weighs in at <strong><a href="https://github.com/makeusabrew/novalidate/issues/1"74</a></a> bytes</strong>:</p>
 
-<pre><code>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate","");</code></pre>
+<pre><code>for(var f=document.forms,i=f.length;i--;)f[i].setAttribute("novalidate",i)</code></pre>
 
 <h2>Why?</h2>
 
